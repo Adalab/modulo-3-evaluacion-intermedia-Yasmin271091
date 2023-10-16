@@ -1,0 +1,78 @@
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  
+  &__title {
+    font-size: 2em;
+  }
+  
+  &__search {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  &__text,
+  .select {
+    margin: 5px;
+  }
+}
+
+.list-container {
+  display: flex; 
+  justify-content: space-evenly; 
+}
+
+.list-country {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    margin-right: 20px; 
+    
+    span {
+      font-size: 2em;
+    }
+  }
+}
+
+.new-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-newContry {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.new-country,
+.new-capital,
+.new-flag,
+.new-continents {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.new-country[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #0056b3;
+  }
+}
