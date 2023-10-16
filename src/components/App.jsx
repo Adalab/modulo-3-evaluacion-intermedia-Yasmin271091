@@ -13,10 +13,7 @@ function App() {
     continents:""
   })
   useEffect(() => {
-    fetch(
-      'https://restcountries.com/v3.1/all?fields=name,capital,flag,continents'
-      //https://restcountries.com/v3.1/all
-    )
+    fetch('https://restcountries.com/v3.1/all?fields=name,capital,flag,continents')
       .then((response) => response.json())
       .then((fetchData) => {
         setData(fetchData);
